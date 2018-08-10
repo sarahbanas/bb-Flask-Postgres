@@ -5,6 +5,7 @@ Barebones Docker Flask/Python and Postgres database. Use this as a set up to a V
 You can remove any of the requirements as you see fit.
 
 1. clone the repo to your shared drive, make sure it's mounted in your VirtualBox VM.
-2. `docker build .`
-3. `docker-compose up`
-4. Success.
+2. `docker volume create --name flaskapi --driver local` -- this has to be the same volume name that's in the docker-compose.yml
+3. `docker build .`
+4. `docker-compose up`
+5. Success.
